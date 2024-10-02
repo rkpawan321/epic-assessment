@@ -1,0 +1,182 @@
+/* Center the entire body and the form */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818; /* Dark background color */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.form-container {
+  background-color: #2c2c2c; 
+  /* Dark grey background for form */
+  padding: 30px;
+  width: 100%; /* Ensure form takes full width */
+  /* max-width: 400px; Limit form width on larger screens */
+  min-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure all form elements are centered */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.form-box {
+    width: 100%;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.input-group {
+  width: 100%; /* Ensure inputs take full width */
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%; /* Full width of the input field */
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding in width calculations */
+  display: block; /* Ensure input is a block element */
+}
+
+input::placeholder {
+  color: #b0b0b0;
+}
+
+button {
+  width: 100%; /* Make sure the button takes full width */
+  padding: 12px;
+  
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box; /* Include padding in width calculations */
+  display: block; /* Ensure button is a block element */
+  background-color: #1a73e8;
+}
+
+button:hover {
+  background-color: #1559b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.invalid {
+  border: 1px solid #ff6b6b;
+}
+
+.valid-feedback {
+  color: #4caf50;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Global box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Rotating logo */
+.rotating {
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .success-container {
+    text-align: center;
+    color: white;
+  }
+  
+  .rotating-image {
+    margin-top: 20px;
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff6b81;
+  }
+  
+  .error {
+    color: #ff6b6b;
+    font-size: 12px;
+  }
+  
+  .invalid {
+    border: 1px solid #ff6b6b;
+  }
+  
+  .valid-feedback {
+    color: #4caf50;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+    width: 95%; /* Ensure the form takes 95% of the screen width */
+    margin: 0 auto; /* Center form with small margin on both sides */
+    min-width: 300px; 
+    max-width: 400px;
+  }
+
+  input, button {
+    width: 100%; /* Inputs and button take full width of the form */
+    display: block; /* Make sure the elements are block level */
+  }
+}
