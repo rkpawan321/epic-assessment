@@ -5,23 +5,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #181818; /* Dark background color */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  background-color: #181818;
+  overflow-x: hidden;
 }
 
 .form-container {
   background-color: #2c2c2c; 
-  /* Dark grey background for form */
   padding: 30px;
-  width: 100%; /* Ensure form takes full width */
-  /* max-width: 400px; Limit form width on larger screens */
+  width: 100%;
   min-width: 400px;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Ensure all form elements are centered */
-  box-sizing: border-box; /* Include padding in width calculations */
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .form-box {
@@ -34,8 +32,9 @@ body {
 }
 
 .logo {
-  width: 60px;
-  margin-bottom: 20px;
+  width: 90px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 h2 {
@@ -45,12 +44,12 @@ h2 {
 }
 
 .input-group {
-  width: 100%; /* Ensure inputs take full width */
+  width: 100%;
   margin-bottom: 20px;
 }
 
 input {
-  width: 100%; /* Full width of the input field */
+  width: 100%;
   padding: 12px;
   border-radius: 5px;
   background-color: #3c3c3c;
@@ -58,8 +57,8 @@ input {
   outline: none;
   color: white;
   font-size: 14px;
-  box-sizing: border-box; /* Include padding in width calculations */
-  display: block; /* Ensure input is a block element */
+  box-sizing: border-box;
+  display: block;
 }
 
 input::placeholder {
@@ -67,7 +66,7 @@ input::placeholder {
 }
 
 button {
-  width: 100%; /* Make sure the button takes full width */
+  width: 100%;
   padding: 12px;
   
   border: none;
@@ -76,8 +75,8 @@ button {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  box-sizing: border-box; /* Include padding in width calculations */
-  display: block; /* Ensure button is a block element */
+  box-sizing: border-box;
+  display: block;
   background-color: #1a73e8;
 }
 
@@ -106,11 +105,9 @@ button:focus {
   margin-top: 10px;
 }
 
-/* Global box-sizing rule */
 * {
   box-sizing: border-box;
 }
-
 
 /* Rotating logo */
 .rotating {
@@ -169,14 +166,14 @@ button:focus {
 @media (max-width: 600px) {
   .form-container {
     padding: 20px;
-    width: 95%; /* Ensure the form takes 95% of the screen width */
-    margin: 0 auto; /* Center form with small margin on both sides */
+    width: 95%;
+    margin: 0 auto;
     min-width: 300px; 
     max-width: 400px;
   }
 
   input, button {
-    width: 100%; /* Inputs and button take full width of the form */
-    display: block; /* Make sure the elements are block level */
+    width: 100%;
+    display: block;
   }
 }

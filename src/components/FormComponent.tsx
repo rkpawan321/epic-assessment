@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './FormComponent.css'; // Import CSS for styles
-import epicLogo from './assets/epic_games.png'; // Import the PNG image
+import '../styles/FormComponent.css'; // Import CSS for styles
+import epicLogo from '../assets/epic_games.png'; // Import the PNG image
 
 interface FormValues {
   firstName: string;
