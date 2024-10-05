@@ -1,30 +1,55 @@
-Epic Internship React Exercise
+# Epic Internship React Exercise
 
-First name: Pawan
-Middle name: Ramanna
-Last name: Kondebai
+## Author
+**Pawan Ramanna Kondebai**
 
+- **Portfolio**: [https://pawank.me](https://pawank.me)
 
-This is a quick coding exercise that should not take long to complete. Having said that, we
-understand that people have busy schedules and other commitments so take your time but note
-that the test should be returned no later than a week after receiving it.
-If you have any questions please use your best judgment, we are interested in seeing your
-intuition as part of this exercise.
-Please return any files you created to complete this exercise.
-High Level Brief
-Create a Form in React that displays a list of input fields and a Validate button.
-Requirements
-● The form must have the following input fields:
-○ First Name
-○ Last Name
-○ Password
-○ Confirm Password
-● After the user clicks on the Validate button, the form should be validated for any errors
-(see Validation Checks below).
-● If the form has no errors, this should be indicated to the user in some way.
-● Every input element should have a placeholder value.
-Validation Checks
-● None of the form fields should be empty.
-● The First Name should be at least 5 characters long.
-● The Last Name should be at least 5 characters long.
-● The Password and Confirm Password should match exactly.
+## Description
+This is a simple form-based React application that demonstrates form validation with a set of predefined input fields. The form contains First Name, Last Name, Password, and Confirm Password fields, along with a validation mechanism that checks for specific conditions when the user submits the form.
+
+## Features
+- Responsive UI that works seamlessly across devices.
+- A validation (Sign In) button that checks for errors in the form.
+- Placeholder values for every input field.
+- Validation checks to ensure:
+  - None of the form fields are left empty.
+  - The First Name is at least 5 characters long.
+  - The Last Name is at least 5 characters long.
+  - The Password and Confirm Password fields match exactly.
+  
+If the validation passes with no errors, the user is shown a "Logged-In" page.
+
+## Screenshots
+### Form Screen
+![Form Screen](https://github.com/user-attachments/assets/8b474f3c-2e3d-4237-8616-fc7bcc17fdfe)
+
+### Error messages
+![Error messages](https://github.com/user-attachments/assets/adafc41d-48e9-4afd-8238-2847348f2be7)
+
+### Logged-In Page
+![Logged-In Page](https://github.com/user-attachments/assets/1dae6207-4d7a-4733-b8b7-5c33483fa85d)
+
+## Validation Logic
+1. **Empty Fields**: Ensures all fields are filled in before proceeding.
+2. **First Name Length**: Checks if the First Name is at least 5 characters long.
+3. **Last Name Length**: Ensures the Last Name is at least 5 characters long.
+4. **Password Match**: Verifies that the Password and Confirm Password fields match.
+
+## Demo
+Watch the demo video: [DEMO LINK](https://youtu.be/iAlFjsfbZYc?si=4UMZUTlwsiBD3QNu)
+
+## GitHub Repository
+Source code is available here: [GITHUB LINK](https://github.com/rkpawan321/epic-assessment)
+
+## Installation
+To run this project locally, follow these steps:
+
+   ```bash
+   git clone https://github.com/rkpawan321/epic-assessment.git
+   cd epic-assessment
+   npm install
+   npm run dev
+   ```
+   
+
