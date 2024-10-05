@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+Epic Internship React Exercise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+First name: Pawan
+Middle name: Ramanna
+Last name: Kondebai
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This is a quick coding exercise that should not take long to complete. Having said that, we
+understand that people have busy schedules and other commitments so take your time but note
+that the test should be returned no later than a week after receiving it.
+If you have any questions please use your best judgment, we are interested in seeing your
+intuition as part of this exercise.
+Please return any files you created to complete this exercise.
+High Level Brief
+Create a Form in React that displays a list of input fields and a Validate button.
+Requirements
+● The form must have the following input fields:
+○ First Name
+○ Last Name
+○ Password
+○ Confirm Password
+● After the user clicks on the Validate button, the form should be validated for any errors
+(see Validation Checks below).
+● If the form has no errors, this should be indicated to the user in some way.
+● Every input element should have a placeholder value.
+Validation Checks
+● None of the form fields should be empty.
+● The First Name should be at least 5 characters long.
+● The Last Name should be at least 5 characters long.
+● The Password and Confirm Password should match exactly.
